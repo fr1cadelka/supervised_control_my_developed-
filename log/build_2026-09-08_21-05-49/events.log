@@ -1,0 +1,590 @@
+[0.000000] (-) TimerEvent: {}
+[0.000315] (move_to_point_action) JobQueued: {'identifier': 'move_to_point_action', 'dependencies': OrderedDict()}
+[0.000397] (gui_control) JobQueued: {'identifier': 'gui_control', 'dependencies': OrderedDict([('move_to_point_action', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action')])}
+[0.000422] (move_to_point_server) JobQueued: {'identifier': 'move_to_point_server', 'dependencies': OrderedDict([('move_to_point_action', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action')])}
+[0.000442] (move_to_point_action) JobStarted: {'identifier': 'move_to_point_action'}
+[0.007178] (move_to_point_action) JobProgress: {'identifier': 'move_to_point_action', 'progress': 'cmake'}
+[0.007860] (move_to_point_action) Command: {'cmd': ['/usr/bin/cmake', '/home/dmitry/Documents/supervised_control_ws/src/move_to_point_action', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099781] (-) TimerEvent: {}
+[0.124019] (move_to_point_action) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.196892] (move_to_point_action) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199948] (-) TimerEvent: {}
+[0.238277] (move_to_point_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.294766] (move_to_point_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.298872] (move_to_point_action) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.299230] (move_to_point_action) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.300041] (-) TimerEvent: {}
+[0.301842] (move_to_point_action) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.302054] (move_to_point_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.359125] (move_to_point_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.365788] (move_to_point_action) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.365925] (move_to_point_action) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.366119] (move_to_point_action) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.370284] (move_to_point_action) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400178] (-) TimerEvent: {}
+[0.500524] (-) TimerEvent: {}
+[0.596563] (move_to_point_action) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600653] (-) TimerEvent: {}
+[0.680123] (move_to_point_action) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.683794] (move_to_point_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.689289] (move_to_point_action) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.700720] (-) TimerEvent: {}
+[0.721563] (move_to_point_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.745941] (move_to_point_action) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.779213] (move_to_point_action) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.800870] (-) TimerEvent: {}
+[0.901088] (-) TimerEvent: {}
+[1.001310] (-) TimerEvent: {}
+[1.002767] (move_to_point_action) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101395] (-) TimerEvent: {}
+[1.167833] (move_to_point_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201484] (-) TimerEvent: {}
+[1.301710] (-) TimerEvent: {}
+[1.389353] (move_to_point_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.401787] (-) TimerEvent: {}
+[1.404570] (move_to_point_action) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.406159] (move_to_point_action) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.425304] (move_to_point_action) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.425452] (move_to_point_action) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.425536] (move_to_point_action) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.425606] (move_to_point_action) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.438166] (move_to_point_action) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.482348] (move_to_point_action) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.483330] (move_to_point_action) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.487765] (move_to_point_action) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.501913] (-) TimerEvent: {}
+[1.514930] (move_to_point_action) StdoutLine: {'line': b'-- Generating done\n'}
+[1.522246] (move_to_point_action) StdoutLine: {'line': b'-- Build files have been written to: /home/dmitry/Documents/supervised_control_ws/build/move_to_point_action\n'}
+[1.527672] (move_to_point_action) CommandEnded: {'returncode': 0}
+[1.529492] (move_to_point_action) JobProgress: {'identifier': 'move_to_point_action', 'progress': 'build'}
+[1.529538] (move_to_point_action) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action', '--', '-j16', '-l16'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.560666] (move_to_point_action) StdoutLine: {'line': b'[  3%] Generating C code for ROS interfaces\n'}
+[1.570772] (move_to_point_action) StdoutLine: {'line': b'[  6%] Generating C++ code for ROS interfaces\n'}
+[1.573227] (move_to_point_action) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_move_to_point_action\n'}
+[1.602000] (-) TimerEvent: {}
+[1.702356] (-) TimerEvent: {}
+[1.709651] (move_to_point_action) StdoutLine: {'line': b'running egg_info\n'}
+[1.721001] (move_to_point_action) StdoutLine: {'line': b'creating move_to_point_action.egg-info\n'}
+[1.721149] (move_to_point_action) StdoutLine: {'line': b'writing move_to_point_action.egg-info/PKG-INFO\n'}
+[1.721323] (move_to_point_action) StdoutLine: {'line': b'writing dependency_links to move_to_point_action.egg-info/dependency_links.txt\n'}
+[1.721543] (move_to_point_action) StdoutLine: {'line': b'writing top-level names to move_to_point_action.egg-info/top_level.txt\n'}
+[1.721751] (move_to_point_action) StdoutLine: {'line': b"writing manifest file 'move_to_point_action.egg-info/SOURCES.txt'\n"}
+[1.752169] (move_to_point_action) StdoutLine: {'line': b"reading manifest file 'move_to_point_action.egg-info/SOURCES.txt'\n"}
+[1.752605] (move_to_point_action) StdoutLine: {'line': b"writing manifest file 'move_to_point_action.egg-info/SOURCES.txt'\n"}
+[1.772450] (move_to_point_action) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_move_to_point_action_egg\n'}
+[1.802560] (-) TimerEvent: {}
+[1.841938] (move_to_point_action) StdoutLine: {'line': b'[  9%] Building C object CMakeFiles/move_to_point_action__rosidl_generator_c.dir/rosidl_generator_c/move_to_point_action/action/detail/move_to_point__functions.c.o\n'}
+[1.850732] (move_to_point_action) StdoutLine: {'line': b'[  9%] Built target move_to_point_action__cpp\n'}
+[1.857911] (move_to_point_action) StdoutLine: {'line': b'[ 12%] Generating C++ type support dispatch for ROS interfaces\n'}
+[1.859648] (move_to_point_action) StdoutLine: {'line': b'[ 19%] Generating C++ introspection for ROS interfaces\n'}
+[1.859733] (move_to_point_action) StdoutLine: {'line': b'[ 19%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[1.902688] (-) TimerEvent: {}
+[1.958720] (move_to_point_action) StdoutLine: {'line': b'[ 22%] Linking C shared library libmove_to_point_action__rosidl_generator_c.so\n'}
+[1.990049] (move_to_point_action) StdoutLine: {'line': b'[ 22%] Built target move_to_point_action__rosidl_generator_c\n'}
+[2.001712] (move_to_point_action) StdoutLine: {'line': b'[ 25%] Generating C type support for eProsima Fast-RTPS\n'}
+[2.002002] (move_to_point_action) StdoutLine: {'line': b'[ 32%] Generating C introspection for ROS interfaces\n'}
+[2.002096] (move_to_point_action) StdoutLine: {'line': b'[ 32%] Generating C type support dispatch for ROS interfaces\n'}
+[2.002753] (-) TimerEvent: {}
+[2.037043] (move_to_point_action) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/move_to_point_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/move_to_point_action/action/move_to_point__type_support.cpp.o\n'}
+[2.075651] (move_to_point_action) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/move_to_point_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/move_to_point_action/action/detail/move_to_point__type_support.cpp.o\n'}
+[2.102858] (-) TimerEvent: {}
+[2.203193] (-) TimerEvent: {}
+[2.215682] (move_to_point_action) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/move_to_point_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/move_to_point_action/action/detail/dds_fastrtps/move_to_point__type_support.cpp.o\n'}
+[2.236808] (move_to_point_action) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/move_to_point_action__rosidl_typesupport_c.dir/rosidl_typesupport_c/move_to_point_action/action/move_to_point__type_support.cpp.o\n'}
+[2.236990] (move_to_point_action) StdoutLine: {'line': b'[ 48%] Building C object CMakeFiles/move_to_point_action__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/move_to_point_action/action/detail/move_to_point__type_support.c.o\n'}
+[2.272362] (move_to_point_action) StdoutLine: {'line': b'[ 51%] Linking C shared library libmove_to_point_action__rosidl_typesupport_introspection_c.so\n'}
+[2.276482] (move_to_point_action) StdoutLine: {'line': b'[ 54%] Linking CXX shared library libmove_to_point_action__rosidl_typesupport_c.so\n'}
+[2.293840] (move_to_point_action) StdoutLine: {'line': b'[ 54%] Built target move_to_point_action__rosidl_typesupport_introspection_c\n'}
+[2.303307] (-) TimerEvent: {}
+[2.312732] (move_to_point_action) StdoutLine: {'line': b'[ 54%] Built target move_to_point_action__rosidl_typesupport_c\n'}
+[2.358366] (move_to_point_action) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/move_to_point_action__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/move_to_point_action/action/detail/move_to_point__type_support_c.cpp.o\n'}
+[2.403538] (-) TimerEvent: {}
+[2.444440] (move_to_point_action) StdoutLine: {'line': b'[ 61%] Linking CXX shared library libmove_to_point_action__rosidl_typesupport_cpp.so\n'}
+[2.479762] (move_to_point_action) StdoutLine: {'line': b'[ 61%] Built target move_to_point_action__rosidl_typesupport_cpp\n'}
+[2.503639] (-) TimerEvent: {}
+[2.586049] (move_to_point_action) StdoutLine: {'line': b'[ 64%] Linking CXX shared library libmove_to_point_action__rosidl_typesupport_introspection_cpp.so\n'}
+[2.602456] (move_to_point_action) StdoutLine: {'line': b'[ 67%] Linking CXX shared library libmove_to_point_action__rosidl_typesupport_fastrtps_c.so\n'}
+[2.603726] (-) TimerEvent: {}
+[2.605449] (move_to_point_action) StdoutLine: {'line': b'[ 70%] Linking CXX shared library libmove_to_point_action__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.637083] (move_to_point_action) StdoutLine: {'line': b'[ 70%] Built target move_to_point_action__rosidl_typesupport_introspection_cpp\n'}
+[2.665646] (move_to_point_action) StdoutLine: {'line': b'[ 70%] Built target move_to_point_action__rosidl_typesupport_fastrtps_c\n'}
+[2.670663] (move_to_point_action) StdoutLine: {'line': b'[ 70%] Built target move_to_point_action__rosidl_typesupport_fastrtps_cpp\n'}
+[2.685295] (move_to_point_action) StdoutLine: {'line': b'[ 70%] Built target move_to_point_action\n'}
+[2.701331] (move_to_point_action) StdoutLine: {'line': b'[ 74%] Generating Python code for ROS interfaces\n'}
+[2.703804] (-) TimerEvent: {}
+[2.804007] (-) TimerEvent: {}
+[2.904340] (-) TimerEvent: {}
+[3.004570] (-) TimerEvent: {}
+[3.077794] (move_to_point_action) StdoutLine: {'line': b'[ 74%] Built target move_to_point_action__py\n'}
+[3.091226] (move_to_point_action) StdoutLine: {'line': b'[ 77%] Building C object CMakeFiles/move_to_point_action__rosidl_generator_py.dir/rosidl_generator_py/move_to_point_action/action/_move_to_point_s.c.o\n'}
+[3.104667] (-) TimerEvent: {}
+[3.204917] (-) TimerEvent: {}
+[3.218814] (move_to_point_action) StdoutLine: {'line': b'[ 80%] Linking C shared library rosidl_generator_py/move_to_point_action/libmove_to_point_action__rosidl_generator_py.so\n'}
+[3.253018] (move_to_point_action) StdoutLine: {'line': b'[ 80%] Built target move_to_point_action__rosidl_generator_py\n'}
+[3.270684] (move_to_point_action) StdoutLine: {'line': b'[ 83%] Building C object CMakeFiles/move_to_point_action__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_c.c.o\n'}
+[3.270878] (move_to_point_action) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/move_to_point_action__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[3.270970] (move_to_point_action) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/move_to_point_action__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[3.305012] (-) TimerEvent: {}
+[3.346914] (move_to_point_action) StdoutLine: {'line': b'[ 93%] Linking C shared library rosidl_generator_py/move_to_point_action/move_to_point_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.352168] (move_to_point_action) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/move_to_point_action/move_to_point_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.360044] (move_to_point_action) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/move_to_point_action/move_to_point_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.384844] (move_to_point_action) StdoutLine: {'line': b'[100%] Built target move_to_point_action__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.393067] (move_to_point_action) StdoutLine: {'line': b'[100%] Built target move_to_point_action__rosidl_typesupport_introspection_c__pyext\n'}
+[3.396903] (move_to_point_action) StdoutLine: {'line': b'[100%] Built target move_to_point_action__rosidl_typesupport_c__pyext\n'}
+[3.405130] (-) TimerEvent: {}
+[3.406847] (move_to_point_action) CommandEnded: {'returncode': 0}
+[3.407603] (move_to_point_action) JobProgress: {'identifier': 'move_to_point_action', 'progress': 'install'}
+[3.413760] (move_to_point_action) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_action'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.419496] (move_to_point_action) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[3.419918] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/ament_index/resource_index/rosidl_interfaces/move_to_point_action\n'}
+[3.420108] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.420190] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.420330] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.420574] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__struct.h\n'}
+[3.420688] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__functions.c\n'}
+[3.420750] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__type_support.h\n'}
+[3.420996] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__functions.h\n'}
+[3.421099] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/move_to_point.h\n'}
+[3.421165] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg\n'}
+[3.421293] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.421358] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/library_path.sh\n'}
+[3.421623] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/library_path.dsv\n'}
+[3.421875] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_generator_c.so\n'}
+[3.421936] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_generator_c.so" to ""\n'}
+[3.422002] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.422272] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.422336] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.422403] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__rosidl_typesupport_fastrtps_c.h\n'}
+[3.422535] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg\n'}
+[3.422783] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.422844] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_fastrtps_c.so\n'}
+[3.423076] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.423316] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.423512] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.423708] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.423780] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__rosidl_typesupport_introspection_c.h\n'}
+[3.423847] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__type_support.c\n'}
+[3.423914] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg\n'}
+[3.423981] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.424056] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_introspection_c.so\n'}
+[3.424123] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.424192] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_c.so\n'}
+[3.424259] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_c.so" to ""\n'}
+[3.424325] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.424390] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.424455] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.424533] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__traits.hpp\n'}
+[3.424606] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__struct.hpp\n'}
+[3.424675] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__builder.hpp\n'}
+[3.424741] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__type_support.hpp\n'}
+[3.424807] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/move_to_point.hpp\n'}
+[3.424873] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg\n'}
+[3.424940] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.425008] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.425073] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.425138] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.425207] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/dds_fastrtps\n'}
+[3.425273] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.425339] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg\n'}
+[3.425403] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.425467] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.425546] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.425614] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action\n'}
+[3.425678] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action\n'}
+[3.425750] (move_to_point_action) StdoutLine: {'line': b'-- Up-to-date: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail\n'}
+[3.425818] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__type_support.cpp\n'}
+[3.425881] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/include/move_to_point_action/move_to_point_action/action/detail/move_to_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.425946] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_introspection_cpp.so\n'}
+[3.426010] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.426075] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_cpp.so\n'}
+[3.426140] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_typesupport_cpp.so" to ""\n'}
+[3.426207] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/pythonpath.sh\n'}
+[3.426273] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/pythonpath.dsv\n'}
+[3.426337] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action-0.0.0-py3.10.egg-info\n'}
+[3.426402] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.426466] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.426543] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.426608] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.426675] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action\n'}
+[3.426738] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/libmove_to_point_action__rosidl_generator_py.so\n'}
+[3.426802] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/__init__.py\n'}
+[3.426866] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.426930] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action\n'}
+[3.427003] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action/__init__.py\n'}
+[3.427067] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action/_move_to_point.py\n'}
+[3.427130] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action/_move_to_point_s.c\n'}
+[3.427194] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.427259] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.427332] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.427401] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_c.c\n'}
+[3.427465] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/_move_to_point_action_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.453642] (move_to_point_action) StdoutLine: {'line': b"Listing '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action'...\n"}
+[3.453795] (move_to_point_action) StdoutLine: {'line': b"Compiling '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/__init__.py'...\n"}
+[3.453884] (move_to_point_action) StdoutLine: {'line': b"Listing '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action'...\n"}
+[3.453956] (move_to_point_action) StdoutLine: {'line': b"Compiling '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action/__init__.py'...\n"}
+[3.454023] (move_to_point_action) StdoutLine: {'line': b"Compiling '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/action/_move_to_point.py'...\n"}
+[3.455122] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.455515] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.455770] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.456247] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.456359] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.456684] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages/move_to_point_action/move_to_point_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.456799] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_generator_py.so\n'}
+[3.457119] (move_to_point_action) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib/libmove_to_point_action__rosidl_generator_py.so" to ""\n'}
+[3.457302] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/action/MoveToPoint.idl\n'}
+[3.457426] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/action/MoveToPoint.action\n'}
+[3.457512] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/ament_index/resource_index/package_run_dependencies/move_to_point_action\n'}
+[3.457731] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/ament_index/resource_index/parent_prefix_path/move_to_point_action\n'}
+[3.457864] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/ament_prefix_path.sh\n'}
+[3.457982] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/ament_prefix_path.dsv\n'}
+[3.458110] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/path.sh\n'}
+[3.458226] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/environment/path.dsv\n'}
+[3.458336] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/local_setup.bash\n'}
+[3.458403] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/local_setup.sh\n'}
+[3.458527] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/local_setup.zsh\n'}
+[3.458638] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/local_setup.dsv\n'}
+[3.458757] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/package.dsv\n'}
+[3.458879] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/ament_index/resource_index/packages/move_to_point_action\n'}
+[3.459035] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_generator_cExport.cmake\n'}
+[3.459163] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_generator_cExport-debug.cmake\n'}
+[3.459295] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.459430] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_typesupport_fastrtps_cExport-debug.cmake\n'}
+[3.459562] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.459692] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[3.459826] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_cExport.cmake\n'}
+[3.459949] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_cExport-debug.cmake\n'}
+[3.460073] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_generator_cppExport.cmake\n'}
+[3.460199] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.460324] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_typesupport_fastrtps_cppExport-debug.cmake\n'}
+[3.460458] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.460598] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[3.460718] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_cppExport.cmake\n'}
+[3.460831] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_action__rosidl_typesupport_cppExport-debug.cmake\n'}
+[3.460947] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_generator_pyExport.cmake\n'}
+[3.461071] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/export_move_to_point_action__rosidl_generator_pyExport-debug.cmake\n'}
+[3.461191] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/rosidl_cmake-extras.cmake\n'}
+[3.461306] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.461418] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.461544] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.461663] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.461776] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.461891] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.462006] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_actionConfig.cmake\n'}
+[3.462126] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake/move_to_point_actionConfig-version.cmake\n'}
+[3.462245] (move_to_point_action) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/package.xml\n'}
+[3.463983] (move_to_point_action) CommandEnded: {'returncode': 0}
+[3.490857] (move_to_point_action) JobEnded: {'identifier': 'move_to_point_action', 'rc': 0}
+[3.491436] (gui_control) JobStarted: {'identifier': 'gui_control'}
+[3.492831] (move_to_point_server) JobStarted: {'identifier': 'move_to_point_server'}
+[3.505099] (gui_control) JobProgress: {'identifier': 'gui_control', 'progress': 'cmake'}
+[3.505158] (-) TimerEvent: {}
+[3.506203] (gui_control) Command: {'cmd': ['/usr/bin/cmake', '/home/dmitry/Documents/supervised_control_ws/src/gui_control', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/dmitry/Documents/supervised_control_ws/install/gui_control'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/gui_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/gui_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[3.507713] (move_to_point_server) JobProgress: {'identifier': 'move_to_point_server', 'progress': 'cmake'}
+[3.507988] (move_to_point_server) Command: {'cmd': ['/usr/bin/cmake', '/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/dmitry/Documents/supervised_control_ws/install/move_to_point_server'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[3.548516] (move_to_point_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.555031] (gui_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.588987] (move_to_point_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.603632] (gui_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.605280] (-) TimerEvent: {}
+[3.625016] (move_to_point_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.641355] (gui_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.681252] (move_to_point_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.689031] (move_to_point_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.689342] (move_to_point_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.689671] (move_to_point_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.692820] (move_to_point_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.694857] (gui_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.702622] (gui_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.702837] (gui_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.703167] (gui_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.705345] (-) TimerEvent: {}
+[3.706084] (gui_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.760748] (move_to_point_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.767657] (gui_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.768650] (move_to_point_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.769030] (move_to_point_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.769449] (move_to_point_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.772027] (move_to_point_server) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.773139] (gui_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.773270] (gui_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.773442] (gui_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.774874] (gui_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.805440] (-) TimerEvent: {}
+[3.905802] (-) TimerEvent: {}
+[4.006074] (-) TimerEvent: {}
+[4.015048] (move_to_point_server) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.029230] (gui_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.074594] (move_to_point_server) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.088237] (gui_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.101761] (move_to_point_server) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.104834] (move_to_point_server) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.106165] (-) TimerEvent: {}
+[4.109642] (move_to_point_server) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.112627] (gui_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.115673] (gui_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.116516] (move_to_point_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.120706] (gui_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.126049] (move_to_point_server) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.127939] (gui_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.137359] (gui_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.158918] (move_to_point_server) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.161268] (move_to_point_server) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.163664] (gui_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.165170] (gui_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.206281] (-) TimerEvent: {}
+[4.228056] (move_to_point_server) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.228312] (gui_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.247716] (move_to_point_server) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.248152] (gui_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.274224] (move_to_point_server) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.276112] (gui_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.282654] (gui_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.282799] (move_to_point_server) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.306415] (-) TimerEvent: {}
+[4.339868] (move_to_point_server) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.340258] (move_to_point_server) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.342749] (gui_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.343087] (gui_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.398240] (gui_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.398406] (move_to_point_server) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.398786] (gui_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.399279] (move_to_point_server) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.406636] (-) TimerEvent: {}
+[4.438861] (gui_control) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[4.440048] (move_to_point_server) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.18 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[4.447871] (gui_control) StdoutLine: {'line': b'-- Found turtlesim: 1.4.3 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[4.463690] (move_to_point_server) StdoutLine: {'line': b'-- Found move_to_point_action: 0.0.0 (/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake)\n'}
+[4.475286] (gui_control) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.18 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[4.480525] (gui_control) StdoutLine: {'line': b'-- Found move_to_point_action: 0.0.0 (/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/share/move_to_point_action/cmake)\n'}
+[4.482565] (move_to_point_server) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.506763] (-) TimerEvent: {}
+[4.515778] (gui_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.530068] (move_to_point_server) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.530226] (move_to_point_server) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.530300] (move_to_point_server) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.530550] (move_to_point_server) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.530858] (move_to_point_server) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.531000] (move_to_point_server) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.531218] (move_to_point_server) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.531547] (move_to_point_server) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.543338] (move_to_point_server) StdoutLine: {'line': b'-- Generating done\n'}
+[4.545703] (move_to_point_server) StdoutLine: {'line': b'-- Build files have been written to: /home/dmitry/Documents/supervised_control_ws/build/move_to_point_server\n'}
+[4.552262] (move_to_point_server) CommandEnded: {'returncode': 0}
+[4.553478] (move_to_point_server) JobProgress: {'identifier': 'move_to_point_server', 'progress': 'build'}
+[4.553517] (move_to_point_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server', '--', '-j16', '-l16'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[4.565009] (gui_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.565154] (gui_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dmitry/Documents/supervised_control_ws/src/gui_control/include\n'}
+[4.565223] (gui_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.565458] (gui_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.566097] (gui_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.566239] (gui_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.566512] (gui_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.566980] (gui_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.592200] (move_to_point_server) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/move_to_point_server_node.dir/src/move_to_point_server_node.cpp.o\n'}
+[4.606853] (-) TimerEvent: {}
+[4.607200] (gui_control) StdoutLine: {'line': b'-- Generating done\n'}
+[4.609812] (gui_control) StdoutLine: {'line': b'-- Build files have been written to: /home/dmitry/Documents/supervised_control_ws/build/gui_control\n'}
+[4.616495] (gui_control) CommandEnded: {'returncode': 0}
+[4.617372] (gui_control) JobProgress: {'identifier': 'gui_control', 'progress': 'build'}
+[4.617487] (gui_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dmitry/Documents/supervised_control_ws/build/gui_control', '--', '-j16', '-l16'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/gui_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/gui_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[4.651255] (gui_control) StdoutLine: {'line': b'[ 20%] Automatic MOC and UIC for target gui_control\n'}
+[4.707086] (-) TimerEvent: {}
+[4.807497] (-) TimerEvent: {}
+[4.907841] (-) TimerEvent: {}
+[5.008130] (-) TimerEvent: {}
+[5.014316] (gui_control) StdoutLine: {'line': b'[ 20%] Built target gui_control_autogen\n'}
+[5.032547] (gui_control) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/gui_control.dir/src/mainwindow.cpp.o\n'}
+[5.032740] (gui_control) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/gui_control.dir/src/gui_control.cpp.o\n'}
+[5.032825] (gui_control) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/gui_control.dir/gui_control_autogen/mocs_compilation.cpp.o\n'}
+[5.108274] (-) TimerEvent: {}
+[5.208534] (-) TimerEvent: {}
+[5.308816] (-) TimerEvent: {}
+[5.409112] (-) TimerEvent: {}
+[5.509448] (-) TimerEvent: {}
+[5.609772] (-) TimerEvent: {}
+[5.710140] (-) TimerEvent: {}
+[5.810519] (-) TimerEvent: {}
+[5.910909] (-) TimerEvent: {}
+[6.011345] (-) TimerEvent: {}
+[6.111664] (-) TimerEvent: {}
+[6.211976] (-) TimerEvent: {}
+[6.312296] (-) TimerEvent: {}
+[6.412899] (-) TimerEvent: {}
+[6.513672] (-) TimerEvent: {}
+[6.614510] (-) TimerEvent: {}
+[6.717851] (-) TimerEvent: {}
+[6.758973] (move_to_point_server) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp: In member function \xe2\x80\x98rclcpp_action::GoalResponse MoveToPointServer::handle_goal(const GoalUUID&, std::shared_ptr<const move_to_point_action::action::MoveToPoint_Goal_<std::allocator<void> > >)\xe2\x80\x99:\n'}
+[6.759214] (move_to_point_server) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp:37:40: warning: unused parameter \xe2\x80\x98uuid\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.759488] (move_to_point_server) StderrLine: {'line': b'   37 |         const rclcpp_action::GoalUUID &uuid, //\xd0\xb8\xd0\xb4\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb8\xd1\x84\xd0\xb8\xd0\xba\xd0\xb0\xd1\x82\xd0\xbe\xd1\x80\n'}
+[6.759586] (move_to_point_server) StderrLine: {'line': b'      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[6.759635] (move_to_point_server) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp: In member function \xe2\x80\x98rclcpp_action::CancelResponse MoveToPointServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<move_to_point_action::action::MoveToPoint> >)\xe2\x80\x99:\n'}
+[6.759685] (move_to_point_server) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp:55:54: warning: unused parameter \xe2\x80\x98goal_handle\xe2\x80\x99 [-Wunused-parameter]\n'}
+[6.759733] (move_to_point_server) StderrLine: {'line': b'   55 |         const std::shared_ptr<GoalHandleMoveToPoint> goal_handle) {\n'}
+[6.759781] (move_to_point_server) StderrLine: {'line': b'      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[6.819012] (-) TimerEvent: {}
+[6.919412] (-) TimerEvent: {}
+[7.019775] (-) TimerEvent: {}
+[7.120693] (-) TimerEvent: {}
+[7.221367] (-) TimerEvent: {}
+[7.321892] (-) TimerEvent: {}
+[7.424598] (-) TimerEvent: {}
+[7.525054] (-) TimerEvent: {}
+[7.625491] (-) TimerEvent: {}
+[7.725889] (-) TimerEvent: {}
+[7.826357] (-) TimerEvent: {}
+[7.926754] (-) TimerEvent: {}
+[8.027166] (-) TimerEvent: {}
+[8.127567] (-) TimerEvent: {}
+[8.228141] (-) TimerEvent: {}
+[8.328629] (-) TimerEvent: {}
+[8.428899] (-) TimerEvent: {}
+[8.529206] (-) TimerEvent: {}
+[8.629587] (-) TimerEvent: {}
+[8.730061] (-) TimerEvent: {}
+[8.830462] (-) TimerEvent: {}
+[8.930965] (-) TimerEvent: {}
+[9.031690] (-) TimerEvent: {}
+[9.132228] (-) TimerEvent: {}
+[9.232795] (-) TimerEvent: {}
+[9.264563] (move_to_point_server) StdoutLine: {'line': b'[100%] Linking CXX executable move_to_point_server_node\n'}
+[9.332881] (-) TimerEvent: {}
+[9.433334] (-) TimerEvent: {}
+[9.534058] (-) TimerEvent: {}
+[9.568827] (move_to_point_server) StdoutLine: {'line': b'[100%] Built target move_to_point_server_node\n'}
+[9.580244] (move_to_point_server) CommandEnded: {'returncode': 0}
+[9.580962] (move_to_point_server) JobProgress: {'identifier': 'move_to_point_server', 'progress': 'install'}
+[9.580993] (move_to_point_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/move_to_point_server'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[9.589044] (move_to_point_server) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[9.589240] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/lib/move_to_point_server/move_to_point_server_node\n'}
+[9.590573] (move_to_point_server) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/lib/move_to_point_server/move_to_point_server_node" to ""\n'}
+[9.591427] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/ament_index/resource_index/package_run_dependencies/move_to_point_server\n'}
+[9.591499] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/ament_index/resource_index/parent_prefix_path/move_to_point_server\n'}
+[9.591539] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/environment/ament_prefix_path.sh\n'}
+[9.591572] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/environment/ament_prefix_path.dsv\n'}
+[9.591613] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/environment/path.sh\n'}
+[9.591644] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/environment/path.dsv\n'}
+[9.591674] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/local_setup.bash\n'}
+[9.591708] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/local_setup.sh\n'}
+[9.591739] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/local_setup.zsh\n'}
+[9.591766] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/local_setup.dsv\n'}
+[9.591795] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/package.dsv\n'}
+[9.591823] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/ament_index/resource_index/packages/move_to_point_server\n'}
+[9.591851] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/cmake/move_to_point_serverConfig.cmake\n'}
+[9.591879] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/cmake/move_to_point_serverConfig-version.cmake\n'}
+[9.591908] (move_to_point_server) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/move_to_point_server/share/move_to_point_server/package.xml\n'}
+[9.592641] (move_to_point_server) CommandEnded: {'returncode': 0}
+[9.604295] (move_to_point_server) JobEnded: {'identifier': 'move_to_point_server', 'rc': 0}
+[9.634159] (-) TimerEvent: {}
+[9.734555] (-) TimerEvent: {}
+[9.834787] (-) TimerEvent: {}
+[9.935004] (-) TimerEvent: {}
+[10.035258] (-) TimerEvent: {}
+[10.135514] (-) TimerEvent: {}
+[10.170190] (gui_control) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/gui_control/src/mainwindow.cpp: In member function \xe2\x80\x98void MainWindow::feedback_callback(rclcpp_action::ClientGoalHandle<move_to_point_action::action::MoveToPoint>::SharedPtr, std::shared_ptr<const move_to_point_action::action::MoveToPoint_Feedback_<std::allocator<void> > >)\xe2\x80\x99:\n'}
+[10.170340] (gui_control) StderrLine: {'line': b'/home/dmitry/Documents/supervised_control_ws/src/gui_control/src/mainwindow.cpp:62:69: warning: unused parameter \xe2\x80\x98handle\xe2\x80\x99 [-Wunused-parameter]\n'}
+[10.170381] (gui_control) StderrLine: {'line': b'   62 | void MainWindow::feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,\n'}
+[10.170409] (gui_control) StderrLine: {'line': b'      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\n'}
+[10.235640] (-) TimerEvent: {}
+[10.335888] (-) TimerEvent: {}
+[10.436136] (-) TimerEvent: {}
+[10.536447] (-) TimerEvent: {}
+[10.636709] (-) TimerEvent: {}
+[10.737016] (-) TimerEvent: {}
+[10.837368] (-) TimerEvent: {}
+[10.937636] (-) TimerEvent: {}
+[11.037963] (-) TimerEvent: {}
+[11.138345] (-) TimerEvent: {}
+[11.238627] (-) TimerEvent: {}
+[11.338919] (-) TimerEvent: {}
+[11.439354] (-) TimerEvent: {}
+[11.539791] (-) TimerEvent: {}
+[11.640186] (-) TimerEvent: {}
+[11.740406] (-) TimerEvent: {}
+[11.840663] (-) TimerEvent: {}
+[11.941054] (-) TimerEvent: {}
+[12.041347] (-) TimerEvent: {}
+[12.141602] (-) TimerEvent: {}
+[12.241876] (-) TimerEvent: {}
+[12.342163] (-) TimerEvent: {}
+[12.442510] (-) TimerEvent: {}
+[12.542796] (-) TimerEvent: {}
+[12.643177] (-) TimerEvent: {}
+[12.743462] (-) TimerEvent: {}
+[12.843717] (-) TimerEvent: {}
+[12.943994] (-) TimerEvent: {}
+[13.044246] (-) TimerEvent: {}
+[13.144564] (-) TimerEvent: {}
+[13.244911] (-) TimerEvent: {}
+[13.345179] (-) TimerEvent: {}
+[13.445503] (-) TimerEvent: {}
+[13.545851] (-) TimerEvent: {}
+[13.646187] (-) TimerEvent: {}
+[13.746635] (-) TimerEvent: {}
+[13.846971] (-) TimerEvent: {}
+[13.947258] (-) TimerEvent: {}
+[14.047531] (-) TimerEvent: {}
+[14.147835] (-) TimerEvent: {}
+[14.248122] (-) TimerEvent: {}
+[14.348404] (-) TimerEvent: {}
+[14.448704] (-) TimerEvent: {}
+[14.549147] (-) TimerEvent: {}
+[14.649465] (-) TimerEvent: {}
+[14.749884] (-) TimerEvent: {}
+[14.850193] (-) TimerEvent: {}
+[14.950477] (-) TimerEvent: {}
+[15.050748] (-) TimerEvent: {}
+[15.150998] (-) TimerEvent: {}
+[15.251277] (-) TimerEvent: {}
+[15.351539] (-) TimerEvent: {}
+[15.451811] (-) TimerEvent: {}
+[15.552141] (-) TimerEvent: {}
+[15.652450] (-) TimerEvent: {}
+[15.752757] (-) TimerEvent: {}
+[15.853042] (-) TimerEvent: {}
+[15.953315] (-) TimerEvent: {}
+[16.053538] (-) TimerEvent: {}
+[16.153799] (-) TimerEvent: {}
+[16.254178] (-) TimerEvent: {}
+[16.354427] (-) TimerEvent: {}
+[16.454711] (-) TimerEvent: {}
+[16.555006] (-) TimerEvent: {}
+[16.655308] (-) TimerEvent: {}
+[16.755578] (-) TimerEvent: {}
+[16.855972] (-) TimerEvent: {}
+[16.956313] (-) TimerEvent: {}
+[17.056617] (-) TimerEvent: {}
+[17.099194] (gui_control) StdoutLine: {'line': b'[100%] Linking CXX executable gui_control\n'}
+[17.156726] (-) TimerEvent: {}
+[17.257007] (-) TimerEvent: {}
+[17.357277] (-) TimerEvent: {}
+[17.457660] (-) TimerEvent: {}
+[17.558026] (-) TimerEvent: {}
+[17.658349] (-) TimerEvent: {}
+[17.758628] (-) TimerEvent: {}
+[17.858891] (-) TimerEvent: {}
+[17.959173] (-) TimerEvent: {}
+[17.966610] (gui_control) StdoutLine: {'line': b'[100%] Built target gui_control\n'}
+[17.974854] (gui_control) CommandEnded: {'returncode': 0}
+[17.975576] (gui_control) JobProgress: {'identifier': 'gui_control', 'progress': 'install'}
+[17.975629] (gui_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dmitry/Documents/supervised_control_ws/build/gui_control'], 'cwd': '/home/dmitry/Documents/supervised_control_ws/build/gui_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'en_US:en'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'dmitry'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/dmitry'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/dmitry/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '2339'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3929'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dmitry'), ('JOURNAL_STREAM', '8:11020'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dmitry'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dmitry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '3f2383e5bd064ad19eb022c6fa4104e4'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/dmitry-IdeaPad-Gaming-3-15IAH7:@/tmp/.ICE-unix/2314,unix/dmitry-IdeaPad-Gaming-3-15IAH7:/tmp/.ICE-unix/2314'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dmitry/Documents/supervised_control_ws/build/gui_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dmitry/Documents/supervised_control_ws/install/move_to_point_action:/opt/ros/humble')]), 'shell': False}
+[17.981631] (gui_control) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[17.981808] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/lib/gui_control/gui_control\n'}
+[17.990135] (gui_control) StdoutLine: {'line': b'-- Set runtime path of "/home/dmitry/Documents/supervised_control_ws/install/gui_control/lib/gui_control/gui_control" to ""\n'}
+[17.990698] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/ament_index/resource_index/package_run_dependencies/gui_control\n'}
+[17.991072] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/ament_index/resource_index/parent_prefix_path/gui_control\n'}
+[17.991269] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/environment/ament_prefix_path.sh\n'}
+[17.991330] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/environment/ament_prefix_path.dsv\n'}
+[17.991368] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/environment/path.sh\n'}
+[17.991408] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/environment/path.dsv\n'}
+[17.991444] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/local_setup.bash\n'}
+[17.991484] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/local_setup.sh\n'}
+[17.991526] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/local_setup.zsh\n'}
+[17.991564] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/local_setup.dsv\n'}
+[17.991603] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/package.dsv\n'}
+[17.991633] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/ament_index/resource_index/packages/gui_control\n'}
+[17.991663] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/cmake/gui_controlConfig.cmake\n'}
+[17.991693] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/cmake/gui_controlConfig-version.cmake\n'}
+[17.991728] (gui_control) StdoutLine: {'line': b'-- Installing: /home/dmitry/Documents/supervised_control_ws/install/gui_control/share/gui_control/package.xml\n'}
+[17.992392] (gui_control) CommandEnded: {'returncode': 0}
+[18.000048] (gui_control) JobEnded: {'identifier': 'gui_control', 'rc': 0}
+[18.000482] (-) EventReactorShutdown: {}

@@ -1,0 +1,8 @@
+/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp: In member function ‘rclcpp_action::GoalResponse MoveToPointServer::handle_goal(const GoalUUID&, std::shared_ptr<const move_to_point_action::action::MoveToPoint_Goal_<std::allocator<void> > >)’:
+/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp:37:40: warning: unused parameter ‘uuid’ [-Wunused-parameter]
+   37 |         const rclcpp_action::GoalUUID &uuid, //идентификатор
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp: In member function ‘rclcpp_action::CancelResponse MoveToPointServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<move_to_point_action::action::MoveToPoint> >)’:
+/home/dmitry/Documents/supervised_control_ws/src/move_to_point_server/src/move_to_point_server_node.cpp:55:54: warning: unused parameter ‘goal_handle’ [-Wunused-parameter]
+   55 |         const std::shared_ptr<GoalHandleMoveToPoint> goal_handle) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
