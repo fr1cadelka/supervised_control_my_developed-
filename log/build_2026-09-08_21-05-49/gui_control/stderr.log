@@ -1,4 +1,0 @@
-/home/dmitry/Documents/supervised_control_ws/src/gui_control/src/mainwindow.cpp: In member function ‘void MainWindow::feedback_callback(rclcpp_action::ClientGoalHandle<move_to_point_action::action::MoveToPoint>::SharedPtr, std::shared_ptr<const move_to_point_action::action::MoveToPoint_Feedback_<std::allocator<void> > >)’:
-/home/dmitry/Documents/supervised_control_ws/src/gui_control/src/mainwindow.cpp:62:69: warning: unused parameter ‘handle’ [-Wunused-parameter]
-   62 | void MainWindow::feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,
-      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
