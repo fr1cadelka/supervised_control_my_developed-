@@ -158,17 +158,8 @@ private:
         //Основной цикл действия
         // int distance = 20;
         while(rclcpp::ok()) {
-            //Проверяем, не отменена ли цель
-            if(goal_handle->is_canceling()) {
-                //Тут нужно сделать что-то для остановки движения
 
-                //Формируем результат
-                result->success = false;
-                goal_handle->canceled(result);
-                RCLCPP_INFO_STREAM(this->get_logger(),
-                                   "Цель отменена");
-                return;
-            }
+
 
 
 
@@ -180,21 +171,21 @@ private:
             double y_process=goal_y-turtle_y;
             double distance_in_process=sqrt(x_process*x_process+y_process*y_process);
 
-            if (distance_in_process<=0.1){
-                cmd.linear.x = 0.0;
-                cmd.angular.z = 0.0;
+            // if (distance_in_process<=0.1){
+            //     cmd.linear.x = 0.0;
+            //     cmd.angular.z = 0.0;
 
-                publisher_turtle_sim->publish(cmd);
-
-
-                result->success = true;
-                goal_handle->succeed(result);
-                RCLCPP_INFO_STREAM(this->get_logger(), "Робот завершил движение ");
-
-                return;
+            //     publisher_turtle_sim->publish(cmd);
 
 
-            }
+            //     result->success = true;
+            //     goal_handle->succeed(result);
+            //     RCLCPP_INFO_STREAM(this->get_logger(), "Робот завершил движение ");
+
+            //     return;
+
+
+            // }
 
             // вычислям угол поворота до заданнйо точки
 
@@ -202,7 +193,7 @@ private:
 
             double angle_eror=target_angle-turtle_theta; // показатель того на сколько черепашка повёрнута не туда
 
-            RCLCPP_INFO_STREAM(this->get_logger(), "Значение дистанции"<<distance_in_process<<" "<<"Значение ошибки по углу"<<angle_eror<< " "<<" Целевой угол поворота"<<target_angle);
+
 
 
             while (angle_eror > M_PI)
@@ -216,22 +207,39 @@ private:
                 cmd.linear.x=0.0;
                 cmd.angular.z=1.0*angle_eror;
 
+                 publisher_turtle_sim->publish(cmd);
+
             }
+
 
             else {
 
                 cmd.linear.x = 1.0;
                 cmd.angular.z = 0.0;
 
+             publisher_turtle_sim->publish(cmd);
+
             }
 
+            if(distance_in_process<0.1){
 
 
-            publisher_turtle_sim->publish(cmd);
+                RCLCPP_INFO_STREAM(this->get_logger(), "Робот остановился в тчоке !");
+                cmd.linear.x = 0.0;
+                cmd.angular.z = 0.0;
+                angle_eror=0.0;
+
+                publisher_turtle_sim->publish(cmd);
+
+                return ;
+                break;
 
 
+            }
 
+          // RCLCPP_INFO_STREAM(this->get_logger(), "Текущая позиция: " << turtle_x << " "  << turtle_y << " | Цель: " << goal_x << " " << goal_y << " | Расстояние: " << distance_in_process );
 
+ RCLCPP_INFO_STREAM(this->get_logger(), "Значение дистанции в процессе"<<distance_in_process<<" "<< "Значение общего пути"<<distance<<" "<<"Значение ошибки по углу"<<angle_eror<< " "<<" Целевой угол поворота"<<target_angle);
             //Пока его нет, имитируем простым уменьшением расстояния
             // distance--;
 
@@ -248,10 +256,6 @@ private:
         //После окончания выполнения действия необходимо отправить результат
         if(rclcpp::ok()) {
 
-            cmd.linear.x = 0.0;
-            cmd.angular.z = 0.0;
-
-            publisher_turtle_sim->publish(cmd);
 
 
             result->success = true;

@@ -135,6 +135,32 @@
      <number>0</number>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>240</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stop">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>250</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
