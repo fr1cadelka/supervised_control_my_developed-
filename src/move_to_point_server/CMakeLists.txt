@@ -10,6 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(move_to_point_action REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -31,6 +33,8 @@ ament_target_dependencies(${PROJECT_NAME}_node
     rclcpp
     rclcpp_action
     move_to_point_action
+    geometry_msgs
+    turtlesim
 )
 install(TARGETS ${PROJECT_NAME}_node
     DESTINATION lib/${PROJECT_NAME})
