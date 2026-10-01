@@ -65,8 +65,24 @@ void MainWindow::feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,
     QMetaObject::invokeMethod(this, [this, feedback]() {
         ui->lineEdit_status->setText("Distance: " + QString::number(feedback->progress));
         ui->progressBar_goal->setValue(100 - feedback->progress);
+
+
+
+
     });
     RCLCPP_INFO_STREAM(node->get_logger(), "Progress: "<<feedback->progress);
+
+
+    if(feedback->progress<70 && feedback->progress>5){
+        ui->pushButton_start->setEnabled(false);
+
+        RCLCPP_INFO_STREAM(node->get_logger(), " диактивация кнопки старт ");
+    }
+
+    else{
+         ui->pushButton_start->setEnabled(true);
+        RCLCPP_INFO_STREAM(node->get_logger(), " активация кнопки старт ");
+    }
 
 }
 void MainWindow::result_callback(const GoalHandleMoveToPoint::WrappedResult &result) {
@@ -83,13 +99,25 @@ void MainWindow::result_callback(const GoalHandleMoveToPoint::WrappedResult &res
 
 void MainWindow::on_pushButton_sendToGoal_clicked()
 {
+
+    send_goal();
+
+}
+
+
+void MainWindow::send_goal(){
+
+
     //Проверка связи с сервером действия
     if(!action_client->wait_for_action_server(std::chrono::seconds(2))) {
         ui->lineEdit_status->setText("Нет связи с сервером действия");
-        return;
+        return ;
     }
 
+
     auto goal_msg = MoveToPoint::Goal();
+
+    auto progress_msg = MoveToPoint::Goal();
     goal_msg.target_point.x = ui->doubleSpinBox_targetX->value();
     goal_msg.target_point.y = ui->doubleSpinBox_targetY->value();
 
@@ -104,13 +132,32 @@ void MainWindow::on_pushButton_sendToGoal_clicked()
 
     action_client->async_send_goal(goal_msg, send_goal_options);
 
+    // RCLCPP_INFO_STREAM(node->get_logger(), "Он идёт или нет стоит на месте -->?: "<<progress_in_process);
+    // if(progress_in_process >70){
+    // ui->pushButton_start->setEnabled(true);
+
+    // RCLCPP_INFO_STREAM(node->get_logger(), " в ифе или нет");
+    // }
+
 }
 
 
 
+void MainWindow::on_pushButton_start_clicked()
+{
+
+    // ui->pushButton_start->setEnabled(false);
+
+    send_goal();
+
+}
 
 
+void MainWindow::on_pushButton_stop_clicked()
+{
 
+
+}
 
 
 

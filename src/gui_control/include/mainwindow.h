@@ -29,6 +29,10 @@ private slots:
 
     void on_pushButton_sendToGoal_clicked();
 
+    void  on_pushButton_start_clicked();
+
+    void  on_pushButton_stop_clicked();
+
 private:
     Ui::MainWindow *ui;
     rclcpp::Node::SharedPtr node;
@@ -38,7 +42,14 @@ private:
         reset_srv;
     rclcpp_action::Client<MoveToPoint>::SharedPtr action_client;
 
+    GoalHandleMoveToPoint::SharedPtr curent_goal_handle;
+
     void pose_callback(const turtlesim::msg::Pose::SharedPtr msg);
+
+   void send_goal();
+
+
+   double progress_in_process = 0.0;
 
     //Функции обратного вызова для действия
     void goal_responce_callback(const GoalHandleMoveToPoint::SharedPtr &
