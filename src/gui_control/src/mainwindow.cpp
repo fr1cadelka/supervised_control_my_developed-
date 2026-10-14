@@ -49,19 +49,25 @@ void MainWindow::goal_responce_callback(const GoalHandleMoveToPoint::SharedPtr &
         QMetaObject::invokeMethod(this, [this]() {
             //Если цель не принята
             ui->lineEdit_status->setText("Цель отклонена");
+            // Для активации кнопки после того как мы нажали
+            ui->pushButton_start->setEnabled(true);
         });
 
     }
     else {
+        // копируем цель в текущую позицию , для того чтобы робот запомнил где он
+         curent_goal_handle= goal_handle;
+
         QMetaObject::invokeMethod(this, [this]() {
-            ui->lineEdit_status->setText("Сервер принял цель, начало движения...");
+        ui->lineEdit_status->setText("Сервер принял цель, начало движения...");
+
         });
 
     }
 }
 void MainWindow::feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,
                                    const std::shared_ptr<const MoveToPoint::Feedback> feedback) {
-    //Функция обрабатывает обратную связь от процесса
+    //Лямбда Функция обрабатывает обратную связь от процесса
     QMetaObject::invokeMethod(this, [this, feedback]() {
         ui->lineEdit_status->setText("Distance: " + QString::number(feedback->progress));
         ui->progressBar_goal->setValue(100 - feedback->progress);
@@ -70,19 +76,19 @@ void MainWindow::feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,
 
 
     });
-    RCLCPP_INFO_STREAM(node->get_logger(), "Progress: "<<feedback->progress);
+    // RCLCPP_INFO_STREAM(node->get_logger(), "Progress: "<<feedback->progress);
 
 
-    if(feedback->progress<70 && feedback->progress>5){
-        ui->pushButton_start->setEnabled(false);
+    // if(feedback->progress<70 && feedback->progress>5){
+    //     ui->pushButton_start->setEnabled(false);
 
-        RCLCPP_INFO_STREAM(node->get_logger(), " диактивация кнопки старт ");
-    }
+    //     RCLCPP_INFO_STREAM(node->get_logger(), " диактивация кнопки старт ");
+    // }
 
-    else{
-         ui->pushButton_start->setEnabled(true);
-        RCLCPP_INFO_STREAM(node->get_logger(), " активация кнопки старт ");
-    }
+    // else{
+    //      ui->pushButton_start->setEnabled(true);
+    //     RCLCPP_INFO_STREAM(node->get_logger(), " активация кнопки старт ");
+    // }
 
 }
 void MainWindow::result_callback(const GoalHandleMoveToPoint::WrappedResult &result) {
@@ -90,10 +96,21 @@ void MainWindow::result_callback(const GoalHandleMoveToPoint::WrappedResult &res
     QMetaObject::invokeMethod(this, [this, result]() {
         if(result.code == rclcpp_action::ResultCode::SUCCEEDED) {
             ui->lineEdit_status->setText("Цель достигнута");
+            // чтобы снова активировать кнопку
+
+        }
+        else if(result.code==rclcpp_action::ResultCode::CANCELED){
+
+            ui->lineEdit_status->setText("Цель отменена");
+
         }
         else {
             ui->lineEdit_status->setText("Цель не достигнута");
+
+
         }
+           ui->pushButton_start->setEnabled(true);
+           curent_goal_handle.reset();
     });
 }
 
@@ -105,13 +122,13 @@ void MainWindow::on_pushButton_sendToGoal_clicked()
 }
 
 
-void MainWindow::send_goal(){
+bool MainWindow::send_goal(){
 
 
     //Проверка связи с сервером действия
     if(!action_client->wait_for_action_server(std::chrono::seconds(2))) {
         ui->lineEdit_status->setText("Нет связи с сервером действия");
-        return ;
+        return false ;
     }
 
 
@@ -122,23 +139,20 @@ void MainWindow::send_goal(){
     goal_msg.target_point.y = ui->doubleSpinBox_targetY->value();
 
     auto send_goal_options = rclcpp_action::Client<MoveToPoint>::SendGoalOptions();
+
     send_goal_options.goal_response_callback =
         std::bind(&MainWindow::goal_responce_callback, this, std::placeholders::_1);
+
     send_goal_options.feedback_callback =
         std::bind(&MainWindow::feedback_callback, this, std::placeholders::_1,
                   std::placeholders::_2);
+
     send_goal_options.result_callback =
         std::bind(&MainWindow::result_callback, this, std::placeholders::_1);
 
     action_client->async_send_goal(goal_msg, send_goal_options);
 
-    // RCLCPP_INFO_STREAM(node->get_logger(), "Он идёт или нет стоит на месте -->?: "<<progress_in_process);
-    // if(progress_in_process >70){
-    // ui->pushButton_start->setEnabled(true);
-
-    // RCLCPP_INFO_STREAM(node->get_logger(), " в ифе или нет");
-    // }
-
+    return true;
 }
 
 
@@ -148,13 +162,38 @@ void MainWindow::on_pushButton_start_clicked()
 
     // ui->pushButton_start->setEnabled(false);
 
-    send_goal();
+    if(send_goal()){
+        ui->pushButton_start->setEnabled(false);
+    }
+
 
 }
 
 
 void MainWindow::on_pushButton_stop_clicked()
 {
+
+    if(curent_goal_handle){
+            action_client->async_cancel_goal(curent_goal_handle);
+            curent_goal_handle.reset();
+            ui->lineEdit_status->setText("Отмена движения робота");
+        }
+
+    else {
+             ui->lineEdit_status->setText("Нет активной цели");
+        }
+
+}
+
+void MainWindow::on_pushButton_loafFile_with_point(){
+
+    QString path=QFileDialog::getOpenFileName(
+        this,
+        "Загрузите точки ",
+        "Текстовый файл (*.txt)"
+        );
+
+
 
 
 }

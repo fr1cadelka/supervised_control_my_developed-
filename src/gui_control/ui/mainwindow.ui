@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>832</width>
+    <height>437</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -161,13 +161,26 @@
      <string>STOP</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_loafFile_with_point">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Please, load file with point (x,y )</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>832</width>
      <height>22</height>
     </rect>
    </property>

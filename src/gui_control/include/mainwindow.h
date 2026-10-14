@@ -8,6 +8,10 @@
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <move_to_point_action/action/move_to_point.hpp>
 #include <memory>
+#include <QFileDialog>
+#include <QFile>
+#include <QTextStream>
+#include <QRegularExpression>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class MainWindow; }
@@ -33,6 +37,9 @@ private slots:
 
     void  on_pushButton_stop_clicked();
 
+
+    void on_pushButton_loafFile_with_point();
+
 private:
     Ui::MainWindow *ui;
     rclcpp::Node::SharedPtr node;
@@ -44,9 +51,11 @@ private:
 
     GoalHandleMoveToPoint::SharedPtr curent_goal_handle;
 
+    std::vector<QPointF> points;
+
     void pose_callback(const turtlesim::msg::Pose::SharedPtr msg);
 
-   void send_goal();
+    bool send_goal();
 
 
    double progress_in_process = 0.0;

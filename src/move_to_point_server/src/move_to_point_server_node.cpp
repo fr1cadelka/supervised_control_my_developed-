@@ -159,7 +159,20 @@ private:
         // int distance = 20;
         while(rclcpp::ok()) {
 
+            if(goal_handle->is_canceling()){
 
+                cmd.linear.x=0;
+                cmd.linear.z=0;
+                publisher_turtle_sim->publish(cmd);
+
+
+                result->success=false;
+                goal_handle->canceled(result);
+                RCLCPP_WARN_STREAM(this->get_logger(),"Действие отменено");
+
+                return;
+
+            }
 
 
 
