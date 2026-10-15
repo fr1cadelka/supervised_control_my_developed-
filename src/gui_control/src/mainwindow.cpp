@@ -185,16 +185,118 @@ void MainWindow::on_pushButton_stop_clicked()
 
 }
 
-void MainWindow::on_pushButton_loafFile_with_point(){
+void MainWindow::on_pushButton_loafFile_with_point_clicked(){
 
-    QString path=QFileDialog::getOpenFileName(
-        this,
-        "Загрузите точки ",
-        "Текстовый файл (*.txt)"
-        );
+    QString path= "/home/dmitry/Downloads/deepseek_text_20261015_ccf142.txt";
+    QFile file(path);
+    if(path.isEmpty()){
+        return;
+    }
+
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+        ui->lineEdit_status->setText("Не удалось открыть файл");
+
+        return;
+    }
+
+    mission_points.clear();
+
+    QTextStream in(&file);
+
+    int loaded=0;
+
+    int skipped=0;
+
+
+    while(!in.atEnd()){
+
+        QString line = in.readLine().trimmed();
+
+        if(line.isEmpty()){
+            continue;
+
+        }
+
+
+        QStringList parts = line.split(QRegularExpression("\\s+"),Qt::SkipEmptyParts);
+
+// парсим данные из файла
+        if(parts.size()<2){
+
+            ++skipped;
+            continue;
+        }
+
+        bool ok_x= false;
+        bool ok_y= false;
+
+        double x= parts[0].toDouble(&ok_x);
+        double y= parts[0].toDouble(&ok_y);
+
+        if(!ok_x || !ok_y){
+
+            ++skipped;
+            continue;
+
+        }
+
+
+        mission_points.push_back(QPoint(x,y));
+        ++loaded;
+
+    }
+
+
+    file.close();
+
+
+    ui->lineEdit_status->setText(QString("Загруженно точек %1, пропущено: %2")
+                                     .arg(loaded)
+                                     .arg(skipped));
 
 
 
+
+
+}
+
+
+void MainWindow:: pushButton_along_the_point_clicked(){
+
+
+}
+
+bool MainWindow:: send_goal_to_point(double x, double y){
+
+    // Проверка связи с сервером действия
+        if(!action_client->wait_for_action_server(std::chrono::seconds(2))) {
+        ui->lineEdit_status->setText("Нет связи с сервером действия");
+        return false ;
+    }
+
+
+
+    auto goal_msg = MoveToPoint::Goal();
+
+    auto progress_msg = MoveToPoint::Goal();
+    goal_msg.target_point.x = x;
+    goal_msg.target_point.y = y;
+
+    auto send_goal_options = rclcpp_action::Client<MoveToPoint>::SendGoalOptions();
+
+    send_goal_options.goal_response_callback =
+        std::bind(&MainWindow::goal_responce_callback, this, std::placeholders::_1);
+
+    send_goal_options.feedback_callback =
+        std::bind(&MainWindow::feedback_callback, this, std::placeholders::_1,
+                  std::placeholders::_2);
+
+    send_goal_options.result_callback =
+        std::bind(&MainWindow::result_callback, this, std::placeholders::_1);
+
+    action_client->async_send_goal(goal_msg, send_goal_options);
+
+    return true;
 
 }
 

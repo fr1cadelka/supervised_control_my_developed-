@@ -37,8 +37,9 @@ private slots:
 
     void  on_pushButton_stop_clicked();
 
+    void on_pushButton_loafFile_with_point_clicked();
 
-    void on_pushButton_loafFile_with_point();
+    void pushButton_along_the_point_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -66,6 +67,13 @@ private:
     void feedback_callback(GoalHandleMoveToPoint::SharedPtr handle,
                            const std::shared_ptr<const MoveToPoint::Feedback> feedback);
     void result_callback(const GoalHandleMoveToPoint::WrappedResult &result);
+
+
+    std::vector<QPointF> mission_points;
+
+    int current_mission_index=-1;
+
+    bool send_goal_to_point(double x, double y);
 };
 
 
