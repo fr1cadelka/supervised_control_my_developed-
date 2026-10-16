@@ -39,7 +39,7 @@ private slots:
 
     void on_pushButton_loafFile_with_point_clicked();
 
-    void pushButton_along_the_point_clicked();
+    void on_pushButton_along_the_point_clicked();
 
 private:
     Ui::MainWindow *ui;
